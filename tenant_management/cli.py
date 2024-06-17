@@ -112,22 +112,6 @@ def removelease():
     else:
         click.echo(f'Lease {lease_id} not found.')
 
-main.add_command(addtenant)
-main.add_command(listtenants)
-main.add_command(removetenant)
-main.add_command(addlandlord)
-main.add_command(listlandlords)
-main.add_command(removelandlord)
-main.add_command(addapartment)
-main.add_command(listapartments)
-main.add_command(removeapartment)
-main.add_command(addlease)
-main.add_command(listleases)
-main.add_command(removelease)
-
-if __name__ == "__main__":
-    Base.metadata.create_all(engine)
-    main()
 
 
 
